@@ -885,7 +885,7 @@ require('lazy').setup({
     priority = 1000, -- Make sure to load this before all the other start plugins.
     config = function()
       ---@diagnostic disable-next-line: missing-fields
-      require('tokyonight').setup {
+      require('gruvbox').setup {
           terminal_colors = true, -- add neovim terminal colors
           undercurl = true,
           underline = true,
