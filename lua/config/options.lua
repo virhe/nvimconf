@@ -21,6 +21,10 @@ vim.opt.updatetime = 300
 
 vim.opt.undofile = true
 
+-- Splits
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+
 -- Lua
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "lua",

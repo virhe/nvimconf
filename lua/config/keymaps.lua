@@ -1,3 +1,8 @@
+-- Buffer
+vim.keymap.set("n", "<leader>bn", "<cmd>bnext<cr>", { desc = "Next buffer" })
+vim.keymap.set("n", "<leader>bp", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
+vim.keymap.set("n", "<leader>bd", "<cmd>bdelete<cr>", { desc = "Delete buffer" })
+
 -- Telescope
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })
@@ -12,6 +17,17 @@ end, { desc = "Next diagnostic" })
 vim.keymap.set("n", "<leader>dp", function()
   vim.diagnostic.jump({ count = -1, float = true })
 end, { desc = "Prev diagnostic" })
+
+-- Terminal
+vim.keymap.set("n", "<leader>tt", function()
+  vim.cmd("split | terminal")
+end, { desc = "Terminal (split)" })
+
+vim.keymap.set("n", "<leader>tv", function()
+  vim.cmd("vsplit | terminal")
+end, { desc = "Terminal (vsplit)" })
+
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
 -- Oil
 vim.keymap.set("n", "-", "<cmd>Oil<cr>", { desc = "Open parent directory" })
