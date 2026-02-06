@@ -26,5 +26,5 @@ return {
       })
       telescope.load_extension("fzf")
     end,
-  }
+  },
 }

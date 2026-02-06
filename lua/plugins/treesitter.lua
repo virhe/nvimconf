@@ -5,8 +5,8 @@ return {
     build = ":TSUpdate",
     opts = {
       highlight = { enable = true },
-      indent = { enable = true},
-      ensure_installed = { "lua", "python"},
+      indent = { enable = true },
+      ensure_installed = { "lua", "python" },
     },
     config = function(_, opts)
       require("nvim-treesitter.config").setup(opts)
