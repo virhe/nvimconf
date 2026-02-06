@@ -1,15 +1,16 @@
 return {
   {
     "saghen/blink.cmp",
-    dependencies = { "rafamadriz/friendly-snippets" },
-    event = "InsertEnter",
     version = "1.*",
+    event = "InsertEnter",
+    dependencies = { "rafamadriz/friendly-snippets" },
     opts = {
       keymap = {
         preset = "default",
         ["<CR>"] = { "select_and_accept", "fallback" },
       },
       completion = { documentation = { auto_show = false } },
+      signature = { enabled = true },
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
       },
