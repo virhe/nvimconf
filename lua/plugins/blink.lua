@@ -7,7 +7,7 @@ return {
     opts = {
       keymap = {
         preset = "default",
-        ["<CR>"] = { "select_accept_and_enter", "fallback" },
+        ["<CR>"] = { "select_and_accept", "fallback" },
       },
       completion = { documentation = { auto_show = false } },
       sources = {
