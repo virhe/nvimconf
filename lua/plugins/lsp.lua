@@ -34,7 +34,16 @@ return {
         end,
       })
 
+      --[[
       vim.lsp.config("ty", {
+        on_attach = function(client)
+          client.server_capabilities.documentFormattingProvider = false
+          client.server_capabilities.documentRangeFormattingProvider = false
+        end,
+      })
+      ]]
+
+      vim.lsp.config("basedpyright", {
         on_attach = function(client)
           client.server_capabilities.documentFormattingProvider = false
           client.server_capabilities.documentRangeFormattingProvider = false
@@ -54,7 +63,9 @@ return {
         },
       })
 
-      vim.lsp.enable({ "lua_ls", "ty", "ruff", "rust_analyzer" })
+      vim.lsp.config("tombi", {})
+
+      vim.lsp.enable({ "lua_ls", "basedpyright", "ruff", "rust_analyzer", "tombi" })
     end,
   },
 }

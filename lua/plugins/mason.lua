@@ -17,9 +17,11 @@ return {
       ensure_installed = {
         "lua_ls",
         "stylua",
-        "ty",
+        --"ty",
+        "basedpyright",
         "ruff",
         "rust_analyzer",
+        "tombi",
       },
     },
   },

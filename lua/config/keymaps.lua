@@ -3,6 +3,10 @@ vim.keymap.set("n", "<leader>bn", "<cmd>bnext<cr>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>bp", "<cmd>bprevious<cr>", { desc = "Previous buffer" })
 vim.keymap.set("n", "<leader>bd", "<cmd>bdelete<cr>", { desc = "Delete buffer" })
 
+vim.keymap.set("n", "<leader>bb", "<cmd>enew<cr>", { desc = "New buffer" })
+vim.keymap.set("n", "<leader>bs", "<cmd>new<cr>", { desc = "New buffer (split)" })
+vim.keymap.set("n", "<leader>bv", "<cmd>vnew<cr>", { desc = "New buffer (vsplit)" })
+
 -- Telescope
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })

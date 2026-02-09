@@ -7,7 +7,7 @@ return {
     opts = {
       keymap = {
         preset = "default",
-        ["<CR>"] = { "select_and_accept", "fallback" },
+        ["<TAB>"] = { "select_and_accept", "fallback" },
       },
       completion = { documentation = { auto_show = false } },
       signature = { enabled = true },
